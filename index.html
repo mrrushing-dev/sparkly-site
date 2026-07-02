@@ -78,7 +78,7 @@
     .section-title em { font-style:italic; color:var(--mint); }
     .problem-grid { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; margin-top:16px; }
     .problem-intro { font-size:1.05rem; color:var(--muted); line-height:1.8; margin-top:12px; }
-    .pain-cards { display:flex; flex-direction:column; gap:16px; }
+    .pain-cards { display:flex; flex-direction:column; gap:16px; max-width:680px; margin:0 auto; }
     .pain-card { display:flex; align-items:flex-start; gap:16px; padding:22px 24px; background:var(--cream); border-radius:var(--radius); border:1px solid var(--warm); transition:transform 0.2s,box-shadow 0.2s; }
     .pain-card:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,0.06); }
     .pain-emoji { width:40px; height:40px; background:var(--white); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.2rem; flex-shrink:0; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
@@ -248,17 +248,14 @@
 <!-- PROBLEM -->
 <section class="problem-section">
   <div class="problem-inner">
-    <div class="problem-grid">
-      <div>
+    <div style="text-align:center; margin-bottom:48px;">
         <p class="section-eyebrow" data-i18n="prob_eyebrow">The problem</p>
         <h2 class="section-title" data-i18n="prob_title">Homeowners hire whoever<br />makes it <em>easiest.</em><br />Are you that person?</h2>
-        <p class="problem-intro" data-i18n="prob_intro">Residential customers aren't comparing 8-page proposals. They're hiring whoever responds first, sounds confident, and makes the process feel fast and easy. If your quote is a text message or a rough email, you're losing jobs before price even enters the conversation.</p>
       </div>
       <div class="pain-cards">
         <div class="pain-card"><div class="pain-emoji">⚡</div><p data-i18n="pain1">The cleaner who <strong>responds first and makes it easy</strong> wins the job — even if they're not the cheapest option.</p></div>
         <div class="pain-card"><div class="pain-emoji">📱</div><p data-i18n="pain2">A text message quote creates <strong>friction and doubt.</strong> A polished proposal with a one-tap accept button builds instant trust.</p></div>
         <div class="pain-card"><div class="pain-emoji">💸</div><p data-i18n="pain3">Most competing tools start at <strong>$59–$149/month</strong> and were built for companies with crews — not for solo owners like you.</p></div>
-      </div>
     </div>
   </div>
 </section>
