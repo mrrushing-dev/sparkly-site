@@ -183,8 +183,8 @@
     .screenshots-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:48px; align-items:start; }
     .screenshot-item { display:flex; flex-direction:column; align-items:center; text-align:center; }
     .screenshot-step-num { width:44px; height:44px; background:rgba(61,158,122,0.12); color:var(--mint-dk); border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:1rem; margin:0 auto 16px; }
-    .screenshot-frame { background:var(--white); border-radius:20px; box-shadow:0 12px 40px rgba(0,0,0,0.10); overflow:hidden; max-width:300px; width:100%; margin:0 auto 20px; border:1px solid var(--warm); }
-    .screenshot-frame img { width:100%; display:block; }
+    .screenshot-frame { background:var(--white); border-radius:20px; box-shadow:0 12px 40px rgba(0,0,0,0.10); overflow:hidden; max-width:300px; width:100%; margin:0 auto 20px; border:1px solid var(--warm); height:520px; display:flex; align-items:center; }
+    .screenshot-frame img { width:100%; display:block; height:100%; object-fit:contain; }
     .screenshot-label { font-size:0.95rem; font-weight:600; color:var(--ink); margin-bottom:6px; }
     .screenshot-desc { font-size:0.85rem; color:var(--muted); line-height:1.65; max-width:240px; }
 
@@ -204,6 +204,8 @@
       .pricing-card { padding:40px 28px; }
       .product-section { padding-left:24px; padding-right:24px; }
       .screenshots-grid { grid-template-columns:1fr; gap:48px; }
+      .screenshot-frame { height:auto; max-width:360px; }
+      .screenshot-frame img { height:auto; object-fit:contain; }
       footer { flex-direction:column; text-align:center; }
     }
   </style>
