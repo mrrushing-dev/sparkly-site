@@ -71,6 +71,14 @@
     .proof-strip-item { display:flex; align-items:center; gap:12px; font-size:0.9rem; color:rgba(255,255,255,0.7); min-height:36px; }
     .strip-icon { width:36px; height:36px; background:rgba(61,158,122,0.2); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0; }
 
+    /* ── VIDEO ── */
+    .video-section { background:var(--white); padding:64px 48px 48px; }
+    .video-inner { max-width:800px; margin:0 auto; text-align:center; }
+    .video-label { font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--mint); margin-bottom:16px; }
+    .video-headline { font-family:'DM Serif Display',serif; font-size:clamp(1.5rem,2.5vw,2rem); color:var(--ink); margin-bottom:32px; line-height:1.2; }
+    .video-wrap { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:16px; box-shadow:0 16px 48px rgba(0,0,0,0.12); }
+    .video-wrap iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
+
     /* ── PROBLEM ── */
     .problem-section { background:var(--white); padding:100px 48px; }
     .problem-inner { max-width:1100px; margin:0 auto; }
@@ -195,7 +203,7 @@
       .lang-btn { padding:5px 10px; font-size:0.75rem; }
       .nav-cta { padding:8px 12px; font-size:0.78rem; white-space:nowrap; }
       .nav-signin { padding:8px 12px; font-size:0.78rem; white-space:nowrap; }
-      .hero,.problem-section,.how-section,.features-section,.quote-section,.pricing-section,.final-cta { padding-left:24px; padding-right:24px; }
+      .hero,.video-section,.problem-section,.how-section,.features-section,.quote-section,.pricing-section,.final-cta { padding-left:24px; padding-right:24px; }
       .problem-grid { grid-template-columns:1fr; gap:40px; }
       .steps-row { grid-template-columns:1fr; gap:16px; }
       .step-card { border-radius:var(--radius) !important; }
@@ -255,6 +263,17 @@
     <div class="proof-strip-item"><div class="strip-icon">💸</div><span data-i18n="strip4">Simple flat-rate pricing</span></div>
   </div>
 </div>
+
+<!-- VIDEO -->
+<section class="video-section">
+  <div class="video-inner">
+    <p class="video-label">See how it works</p>
+    <h2 class="video-headline">From quote request to paid — in minutes.</h2>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/ZcjUDbQessU" title="Sparkly — How it works" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
 
 <!-- PROBLEM -->
 <section class="problem-section">
